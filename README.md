@@ -4,17 +4,20 @@ Wrapper classes that stub imp API objects for testing purposes. These files are 
 
 ## HTTP ##
 
-[Source code](./http)
+[Source code](./http/httpStub.agent.nut)
+
 See [UBloxAssistNow](https://github.com/electricimp/UBloxAssistNow/tree/master/tests) tests for usage example.
 
 ## UART ##
 
-[Source code](./UART)
+[Source code](./UART/uartStub.device.nut)
+
 See [UBloxAssistNow](https://github.com/electricimp/UBloxAssistNow/tree/master/tests) or [UBloxM8N](https://github.com/electricimp/UBloxM8N/tree/master/tests) tests for usage examples.
 
 ## i2c ##
 
-[Source code](./i2c)
+[Source code](./i2c/i2cStub.device.nut)
+
 See [Si702x](https://github.com/electricimp/Si702x/tree/develop/tests) tests for usage example. 
 
 ## LICENSE ##

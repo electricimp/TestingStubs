@@ -22,7 +22,7 @@
 // ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 
-class StubbedI2C {
+class I2CStub {
 
     _writeBuffer = null;
     _readResp    = null;

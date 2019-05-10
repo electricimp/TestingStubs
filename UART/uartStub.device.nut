@@ -23,7 +23,7 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 
 
-class StubbedUart {
+class UartStub {
 
     _cb = null;
     _br = null;

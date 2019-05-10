@@ -121,7 +121,7 @@ class HttpStub {
     function request(verb, url, headers, body = null) {
         local key = getReqKey(verb, url);
         local resp = (key in _pendingResps) ? _pendingResps[key] : DEFAULT_SERVER_RESP;
-        local req = StubbedHttpRequest(verb, url, headers, body, resp, _requestTime);
+        local req = HttpRequestStub(verb, url, headers, body, resp, _requestTime);
         // Store request/response locally
         _pendingReqs[key] <- req;
         _pendingResps[key] <- resp;
@@ -192,7 +192,7 @@ class HttpStub {
 }
 
 // Note - this class doesn't overwrite the imp API httprequest object. The StubbedHttp returns these instances instead of imp API httprequest
-class StubbedHttpRequest {
+class HttpRequestStub {
 
     verb         = null;
     url          = null;
